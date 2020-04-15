@@ -2,6 +2,7 @@ package org.sotap.FirstJoinCommand;
 
 import org.bukkit.event.Listener;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -32,6 +33,7 @@ public class Events implements Listener {
 					String k = commands.get(i);
 					k = k.replace("%username%", p.getName());
 					k = k.replace("%uuid%", p.getUniqueId().toString());
+					k = ChatColor.translateAlternateColorCodes('&', k);
 					Bukkit.dispatchCommand(console, k);
 				}
 			}
