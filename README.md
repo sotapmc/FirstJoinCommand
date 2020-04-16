@@ -27,7 +27,7 @@ commands:
 
 ## Changelog
 
-参见 [Changelog](./CHANGELOG.md)
+可在 [Release](https://github.com/sotapmc/FirstJoinCommand/releases) 页面查看 Changelog。
 
 ## 协议
 
