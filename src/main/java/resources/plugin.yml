@@ -1,29 +1,32 @@
 name: FirstJoinCommand
-version: 0.1
+version: "0.1"
 description: "Auto-execute commands when players join the server for the first time."
 author: Subilan
 website: "https://github.com/sotapmc/FirstJoinCommand"
 main: org.sotap.FirstJoinCommand.FirstJoinCommand
-api-version: 1.13
+api-version: "1.13"
 
-#commands:
-#   firstjoincommand:
-#      aliases: fjc
-#      description: Controls the whole simple plugin.
-#      permission: fjc.command
-#      permission-message: "You do not have the permission to use the command."
-#      usage: /firstjoincommand <options>
-#      
-#permissions: 
-#   fjc.*:
-#      description: The base permission node for FJC.
-#      default: op
-#      children:
-#         fjc.enable: true
-#         fjc.disable: true
-#   fjc.enable:
-#      description: Enable the auto-execution.
-#      default: op
-#   fjc.disable:
-#      description: Disable the auto-execution.
-#      default: op
+commands:
+  firstjoincommand:
+    aliases: ["fjc"]
+    description: Controls the whole simple plugin.
+    permission: fjc.command
+    permission-message: "You do not have the permission to use the command."
+    usage: /firstjoincommand <options>
+permissions:
+  fjc.*:
+    description: The super permission node for FirstJoinCommand.
+    default: op
+    children:
+      fjc.enable: true
+      fjc.disable: true
+      fjc.command: true
+  fjc.enable:
+    description: Enable the auto-execution.
+    default: op
+  fjc.disable:
+    description: Disable the auto-execution.
+    default: op
+  fjc.command:
+    description: The base permission node to access all the commands.
+    default: op
