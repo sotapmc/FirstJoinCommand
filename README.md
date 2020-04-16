@@ -26,6 +26,10 @@ commands:
 
 本项目使用 gradle，要进行编译，直接 `clone` 后执行 `./gradlew.bat build`（Windows 环境）或 `./gradlew build`（Linux 环境）即可。
 
+## Changelog
+
+参见 [Changelog](./CHANGELOG.md)
+
 ## 协议
 
 MIT
